@@ -5,92 +5,92 @@
       - cmds:
           - Ctrl-[
           - Esc
-        help: Débuter le mode commande.
+        help: Débuter le mode commande
   - name: Aborder le mode insertion
     rows:
       - cmds:
           - i
-        help: Insérer avant le curseur.
+        help: Insérer avant le curseur
       - cmds:
           - a
-        help: Insérer (ajouter) après le curseur.
+        help: Insérer (ajouter) après le curseur
       - cmds:
           - I
-        help: Insérer au début de la ligne (ignore les espaces blancs).
+        help: Insérer au début de la ligne (ignore les espaces blancs)
       - cmds:
           - A
-        help: Insérer (ajouter) à la fin de la ligne.
+        help: Insérer (ajouter) à la fin de la ligne
       - cmds:
           - r
-        help: Remplacer le caractère sous le curseur.
+        help: Remplacer le caractère sous le curseur
       - cmds:
           - R
-        help: Remplacer le caractère sous le curseur et les suivants en mode remplacement.
+        help: Remplacer le caractère sous le curseur et les suivants en mode remplacement
       - cmds:
           - v
-        help: Éditer la commande avec $VISUAL, $EDITOR ou vi.
+        help: Éditer la commande avec $VISUAL, $EDITOR ou vi
   - name: Suppression (mode commande)
     rows:
       - cmds:
           - d<déplacement>
-        help: Supprimer du curseur jusqu'à la fin du <déplacement>.
+        help: Supprimer du curseur jusqu'à la fin du <déplacement>
       - cmds:
           - D
           - d$
-        help: Supprimer du curseur jusqu'à la fin de la ligne.
+        help: Supprimer du curseur jusqu'à la fin de la ligne
       - cmds:
           - dd
           - 0d$
-        help: Supprimer la ligne courante.
+        help: Supprimer la ligne courante
   - name: Déplacement (mode commande)
     rows:
       - cmds:
           - 0
-        help: Déplacer le curseur à la colonne 0.
+        help: Déplacer le curseur à la colonne 0
       - cmds:
           - $
-        help: Déplacer le curseur à la fin de la ligne.
+        help: Déplacer le curseur à la fin de la ligne
       - cmds:
           - l
           - Espace
-        help: Déplacer le curseur d'un caractère vers l'avant.
+        help: Déplacer le curseur d'un caractère vers l'avant
       - cmds:
           - h
-        help: Déplacer le curseur d'un caractère vers l'arrière.
+        help: Déplacer le curseur d'un caractère vers l'arrière
       - cmds:
           - e
-        help: Déplacer le curseur jusqu'à la fin du prochain mot. Les mots sont alphanumériques.
+        help: Déplacer le curseur jusqu'à la fin du prochain mot. Les mots sont alphanumériques
       - cmds:
           - b
-        help: Déplacer le curseur jusqu'au début du mot courant ou précédent. Les mots sont alphanumériques.
+        help: Déplacer le curseur jusqu'au début du mot courant ou précédent. Les mots sont alphanumériques
       - cmds:
           - %
-        help: Déplacer le curseur jusqu'au caractère correspondant : (,),[,],{, ou }.
+        help: Déplacer le curseur jusqu'au caractère correspondant : (,),[,],{, ou }
   - name: Couper et coller (mode commande)
     rows:
       - cmds:
           - y<déplacement>
-        help: Copier du curseur jusqu'à la fin du <déplacement>.
+        help: Copier du curseur jusqu'à la fin du <déplacement>
       - cmds:
           - yy
-        help: Copier la ligne courante.
+        help: Copier la ligne courante
       - cmds:
           - p
-        help: Coller le contenu du dernier tampon après le curseur.
+        help: Coller le contenu du dernier tampon après le curseur
       - cmds:
           - P
-        help: Coller le contenu du dernier tampon avant le curseur.
+        help: Coller le contenu du dernier tampon avant le curseur
   - name: Annuler et répéter (mode commande)
     rows:
       - cmds:
           - u
-        help: Annuler incrémentalement la dernière action.
+        help: Annuler incrémentalement la dernière action
       - cmds:
           - U
-        help: Annuler toutes les actions.
+        help: Annuler toutes les actions
       - cmds:
           - .
-        help: Répéter la dernière action.
+        help: Répéter la dernière action
 -
   - name: Historique (mode commande)
     rows:
@@ -98,75 +98,75 @@
           - k
           - Ctrl-p
           - "-"
-        help: Donner la commande précente de l'historique.
+        help: Donner la commande précente de l'historique
       - cmds:
           - j
           - +
-        help: Donner la commande suivante de l'historique.
+        help: Donner la commande suivante de l'historique
       - cmds:
           - G
-        help: Aller à la ligne la plus récente de l'historique.
+        help: Aller à la ligne la plus récente de l'historique
       - cmds:
           - 15G
-        help: Aller à la ligne 15 de l'historique.
+        help: Aller à la ligne 15 de l'historique
       - cmds:
           - Ctrl-r
-        help: Rechercher antérieurement dans l'historique.
+        help: Rechercher antérieurement dans l'historique
       - cmds:
           - /
-        help: Rechercher postérieurement dans l'historique pour une chaîne donnée.
+        help: Rechercher postérieurement dans l'historique pour une chaîne donnée
       - cmds:
           - ?
-        help: Rechercher postérieurement dans l'historique pour une chaîne donnée.
+        help: Rechercher postérieurement dans l'historique pour une chaîne donnée
       - cmds:
           - n
-        help: Répéter la recherche dans la même direction.
+        help: Répéter la recherche dans la même direction
       - cmds:
           - N
-        help: Répéter la recherche dans la direction inverse.
+        help: Répéter la recherche dans la direction inverse
   - name: Marqueurs (mode commande)
     rows:
       - cmds:
           - m<lettre>
-        help: Définir un marqueur nommé <lettre> à la position du curseur.
+        help: Définir un marqueur nommé <lettre> à la position du curseur
       - cmds:
           - "`<lettre>"
-        help: Revenir à la position du marqueur <lettre>.
+        help: Revenir à la position du marqueur <lettre>
   - name: Complétion (mode insertion)
     rows:
       - cmds:
           - Tab
-        help: Auto-compléter le mot courant.
+        help: Auto-compléter le mot courant
   - name: Complétion (mode commande)
     rows:
       - cmds:
           - "="
-        help: Autocompléter le mot courant.
+        help: Autocompléter le mot courant
       - cmds:
           - "*"
-        help: Insérer tous les auto-compléments possibles.
+        help: Insérer tous les auto-compléments possibles
   - name: Divers (mode insertion)
     rows:
       - cmds:
           - Ctrl-d
-        help: Fin de fichier (EOF) ou sortir.
+        help: Fin de fichier (EOF) ou sortir
       - cmds:
           - Ctrl-_
-        help: Annuler la dernière action.
+        help: Annuler la dernière action
       - cmds:
           - Ctrl-u
-        help: Se débarasser de la ligne.
+        help: Se débarasser de la ligne
       - cmds:
           - Ctrl-t
-        help: Transposer le caractère courant et le caractère précédent.
+        help: Transposer le caractère courant et le caractère précédent
   - name: Divers (mode commande)
     rows:
       - cmds:
           - Ctrl-l
-        help: Effacer l'écran.
+        help: Effacer l'écran
       - cmds:
           - "#"
-        help: Insérer un commentaire au début de la ligne, ajouter la ligne à l'historique et débuter une nouvelle ligne.
+        help: Insérer un commentaire au début de la ligne, ajouter la ligne à l'historique et débuter une nouvelle ligne
       - cmds:
           - "~"
-        help: Changer la casse du caractère courant.
+        help: Changer la casse du caractère courant

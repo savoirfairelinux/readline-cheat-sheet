@@ -4,168 +4,168 @@
     rows:
       - cmds:
           - Ctrl-a
-        help: Aller au début de la ligne courante.
+        help: Aller au début de la ligne courante
       - cmds:
           - Ctrl-e
-        help: Aller à la fin de la ligne.
+        help: Aller à la fin de la ligne
       - cmds:
           - Ctrl-f
-        help: Avancer d'un caractère.
+        help: Avancer d'un caractère
       - cmds:
           - Ctrl-b
-        help: Reculer d'un caractère.
+        help: Reculer d'un caractère
       - cmds:
           - Alt-f
-        help: Avancer jusqu'à la fin du prochain mot. Les mots sont alphanumériques.
+        help: Avancer jusqu'à la fin du prochain mot. Les mots sont alphanumériques
       - cmds:
           - Alt-b
-        help: Reculer au début du mot courant ou précédent. Les mots sont alphanumériques.
+        help: Reculer au début du mot courant ou précédent. Les mots sont alphanumériques
       - cmds:
           - Ctrl-l
-        help: Effacer l'écran.
+        help: Effacer l'écran
   - name: Historique
     rows:
       - cmds:
           - Ctrl-p
-        help: Aller chercher la commande précédente de l'historique.
+        help: Aller chercher la commande précédente de l'historique
       - cmds:
           - Ctrl-n
-        help: Aller chercher la commande suivante de l'historique.
+        help: Aller chercher la commande suivante de l'historique
       - cmds:
           - Alt-<
-        help: Aller à la première ligne de l'historique.
+        help: Aller à la première ligne de l'historique
       - cmds:
           - Alt->
-        help: Aller à la dernière ligne de l'historique.
+        help: Aller à la dernière ligne de l'historique
       - cmds:
           - Ctrl-r
-        help: Rechercher antérieurement dans l'historique.
+        help: Rechercher antérieurement dans l'historique
       - cmds:
           - Ctrl-s
-        help: Rechercher postérieurement dans l'historique.
+        help: Rechercher postérieurement dans l'historique
       - cmds:
           - Alt-p
-        help: Rechercher antérieurement dans l'historique pour une chaîne donnée.
+        help: Rechercher antérieurement dans l'historique pour une chaîne donnée
       - cmds:
           - Alt-n
-        help: Rechercher postérieurement dans l'historique pour une chaîne donnée.
+        help: Rechercher postérieurement dans l'historique pour une chaîne donnée
       - cmds:
           - Ctrl-Alt-y
-        help: Insérer le premier argument de la commande précédente. Avec un argument n, insérer le n-ième argument de la commande précédente.
+        help: Insérer le premier argument de la commande précédente. Avec un argument n, insérer le n-ième argument de la commande précédente
       - cmds:
           - Alt-.
           - Alt-_
-        help: Insérer le dernier argument de la commande précédente. Avec un arguement n, insérer le n-ième argument de la commande précédente.
+        help: Insérer le dernier argument de la commande précédente. Avec un argument n, insérer le n-ième argument de la commande précédente
   - name: Édition de texte
     rows:
       - cmds:
           - Ctrl-d
-        help: Supprimer le caractère sous le curseur.
+        help: Supprimer le caractère sous le curseur
       - cmds:
           - Delete
           - Ctrl-h
-        help: Supprimer le caractère avant le curseur.
+        help: Supprimer le caractère avant le curseur
       - cmds:
           - Ctrl-v
           - Ctrl-q
-        help: Ajouter le prochain caractère de façon verbatim.
+        help: Ajouter le prochain caractère de façon verbatim
       - cmds:
           - Ctrl-t
-        help: Transposer le caractère précédent et le caractère courant.
+        help: Transposer le caractère précédent et le caractère courant
       - cmds:
           - Alt-t
-        help: Transposer le mot précédent et le mot courant.
+        help: Transposer le mot précédent et le mot courant
       - cmds:
           - Alt-u
-        help: Mettre en majuscules le mot courant à partir du curseur.
+        help: Mettre en majuscules le mot courant à partir du curseur
       - cmds:
           - Alt-l
-        help: Mettre en minuscules le mot courant à partir du curseur.
+        help: Mettre en minuscules le mot courant à partir du curseur
       - cmds:
           - Alt-c
-        help: Mettre une majuscule au début du mot courant à partir du curseur et en minuscules les autres.
+        help: Mettre une majuscule au début du mot courant à partir du curseur et en minuscules les autres
 -
   - name: Couper et coller
     rows:
       - cmds:
           - Ctrl-k
-        help: Supprimer (couper) du curseur jusqu'à la fin de la ligne.
+        help: Supprimer (couper) du curseur jusqu'à la fin de la ligne
       - cmds:
           - Ctrl-u
           - Ctrl-x Supprime
-        help: Supprimer (couper) du début de la ligne jusqu'au curseur.
+        help: Supprimer (couper) du début de la ligne jusqu'au curseur
       - cmds:
           - Alt-d
-        help: Supprimer (couper) du curseur jusqu'à la fin du mot courant.
+        help: Supprimer (couper) du curseur jusqu'à la fin du mot courant
       - cmds:
           - Alt-Delete
           - Ctrl-w
-        help: Supprimer (couper) du début du mot courant jusqu'au curseur.
+        help: Supprimer (couper) du début du mot courant jusqu'au curseur
       - cmds:
           - Alt-\
-        help: Supprimer les espaces blancs autour du curseur.
+        help: Supprimer les espaces blancs autour du curseur
       - cmds:
           - Ctrl-y
-        help: Coller le contenu supprimé au haut de l'anneau de suppression.
+        help: Coller le contenu supprimé au haut de l'anneau de suppression
       - cmds:
           - Alt-y
-        help: Faire pivoter l'anneau de suppression et coller le contenu au haut de celui-ci. Fonctionne seulement après avoir collé.
+        help: Faire pivoter l'anneau de suppression et coller le contenu au haut de celui-ci. Fonctionne seulement après avoir collé
   - name: Complétion
     rows:
       - cmds:
           - Tab
-        help: Auto-compléter le mot courant.
+        help: Auto-compléter le mot courant
       - cmds:
           - Alt-?
-        help: Lister tous les auto-compléments possibles.
+        help: Lister tous les auto-compléments possibles
       - cmds:
           - Alt-*
-        help: Insérer tous les auto-compléments possibles.
+        help: Insérer tous les auto-compléments possibles
   - name: Macros
     rows:
       - cmds:
           - Ctrl-x (
-        help: Débuter la sauvegarde des caractères tapés en tant que macro.
+        help: Débuter la sauvegarde des caractères tapés en tant que macro
       - cmds:
           - Ctrl-x )
-        help: Arrêter la sauvegarde des caractères tapés en tant que macro.
+        help: Arrêter la sauvegarde des caractères tapés en tant que macro
       - cmds:
           - Ctrl-x e
-        help: Exécuter la macro la plus récemment enregistrée.
+        help: Exécuter la macro la plus récemment enregistrée
   - name: Divers
     rows:
       - cmds:
           - Ctrl-x Ctrl-r
-        help: Lire et insérer le contenu du fichier inputrc.
+        help: Lire et insérer le contenu du fichier inputrc
       - cmds:
           - Ctrl-g
-        help: Annuler la commande d'édition courante.
+        help: Annuler la commande d'édition courante
       - cmds:
           - Ctrl-_
           - Ctrl-x Ctrl-u
-        help: Annuler incrémentalement, de façon indépendante pour chaque ligne.
+        help: Annuler incrémentalement, de façon indépendante pour chaque ligne
       - cmds:
           - Alt-r
-        help: Annuler tous les changements apportés à la ligne courante. Idem à exécuter toutes les annulations afin de revenir à l'état initial.
+        help: Annuler tous les changements apportés à la ligne courante. Idem à exécuter toutes les annulations afin de revenir à l'état initial
       - cmds:
           - Alt-Espace
           - Ctrl-@
-        help: Définir un marqueur (sauvegarder la position du curseur).
+        help: Définir un marqueur (sauvegarder la position du curseur)
       - cmds:
           - Ctrl-x Ctrl-x
-        help: Définir un marqueur et revenir à la position du marqueur précédent.
+        help: Définir un marqueur et revenir à la position du marqueur précédent
       - cmds:
           - Ctrl-]
-        help: Rechercher postérieurement pour un seul caractère dans la ligne courante et s'y déplacer.
+        help: Rechercher postérieurement pour un seul caractère dans la ligne courante et s'y déplacer
       - cmds:
           - Ctrl-Alt-]
-        help: Rechercher antérieurement pour un seul caractère dans la ligne courante et s'y déplacer.
+        help: Rechercher antérieurement pour un seul caractère dans la ligne courante et s'y déplacer
       - cmds:
           - Alt-#
-        help: Commenter la ligne courante et en commencer une nouvelle.
+        help: Commenter la ligne courante et en commencer une nouvelle
       - cmds:
           - Ctrl-e
-        help: Entrer dans le mode d'édition Emacs.
+        help: Entrer dans le mode d'édition Emacs
       - cmds:
           - Ctrl-Alt-j
-        help: Entrer dans le mode d'édition Vi.
+        help: Entrer dans le mode d'édition Vi
