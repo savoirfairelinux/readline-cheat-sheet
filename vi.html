@@ -98,13 +98,13 @@ h2 {
 
               <div class="row">
                 <div class="col-lg-12 col-md-12">
-                  <h1>Readline Cheat Sheet</h1>
-                  <h2 class="editor">Vi editing mode</h2>
-                  For detailed information see the 
-                  <a href="http://cnswww.cns.cwru.edu/php/chet/readline/readline.html">GNU Readline library manual</a>
-                  or type <code>man readline</code>.<br>
-                  For detailed information about Readline in Bash type <code>man bash</code>
-                  and search for <code>^READLINE</code> or <code>Commands for moving</code>.
+                  <h1>Feuille de référence Readline</h1>
+                  <h2 class="editor">Mode d'édition Vi</h2>
+                  Pour de plus amples informations, consulez le
+                  <a href="http://cnswww.cns.cwru.edu/php/chet/readline/readline.html">manuel de bibliothèque GNU Readline</a>
+                  (en anglais) ou tapez <code>man readline</code>.<br>
+                  Pour de plus amples informations à propos de Readline sous Bash, tapez <code>man bash</code>
+                  et cherchez our <code>^BIBLIOTHÈQUE READLINE</code> ou <code>Commandes de déplacement</code>.
                   <br>&nbsp;
                 </div>
               </div>
@@ -112,7 +112,7 @@ h2 {
               <div class="row">
                 <div class="col-lg-6 col-md-6">
 
-                  <h2>Entering command mode</h2>
+                  <h2>Aborder le mode commande</h2>
                   <table>
 
                     <tr>
@@ -122,11 +122,11 @@ h2 {
                         <kbd>Esc</kbd><br>
 
                       </th>
-                      <td>Start command mode.</td>
+                      <td>Débuter le mode commande.</td>
                     </tr>
 
                   </table>
-                  <h2>Entering insert mode</h2>
+                  <h2>Aborder le mode insertion</h2>
                   <table>
 
                     <tr>
@@ -135,7 +135,7 @@ h2 {
                         <kbd>i</kbd><br>
 
                       </th>
-                      <td>Insert before the cursor.</td>
+                      <td>Insérer avant le curseur.</td>
                     </tr>
                     <tr>
                       <th>
@@ -143,7 +143,7 @@ h2 {
                         <kbd>a</kbd><br>
 
                       </th>
-                      <td>Insert (append) after the cursor.</td>
+                      <td>Insérer (ajouter) après le curseur.</td>
                     </tr>
                     <tr>
                       <th>
@@ -151,7 +151,7 @@ h2 {
                         <kbd>I</kbd><br>
 
                       </th>
-                      <td>Insert at the beginning of the line.</td>
+                      <td>Insérer au début de la ligne (ignore les espaces blancs).</td>
                     </tr>
                     <tr>
                       <th>
@@ -159,7 +159,7 @@ h2 {
                         <kbd>A</kbd><br>
 
                       </th>
-                      <td>Insert (append) at the end of the line.</td>
+                      <td>Insérer (ajouter) à la fin de la ligne.</td>
                     </tr>
                     <tr>
                       <th>
@@ -167,7 +167,7 @@ h2 {
                         <kbd>r</kbd><br>
 
                       </th>
-                      <td>Replace the character under the cursor.</td>
+                      <td>Remplacer le caractère sous le curseur.</td>
                     </tr>
                     <tr>
                       <th>
@@ -175,7 +175,7 @@ h2 {
                         <kbd>R</kbd><br>
 
                       </th>
-                      <td>Replace characters under the cursor.</td>
+                      <td>Remplacer le caractère sous le curseur et les suivants en mode remplacement.</td>
                     </tr>
                     <tr>
                       <th>
@@ -183,20 +183,20 @@ h2 {
                         <kbd>v</kbd><br>
 
                       </th>
-                      <td>Edit the command with $VISUAL, $EDITOR, or vi.</td>
+                      <td>Éditer la commande avec $VISUAL, $EDITOR ou vi.</td>
                     </tr>
 
                   </table>
-                  <h2>Deleting (command mode)</h2>
+                  <h2>Suppression (mode commande)</h2>
                   <table>
 
                     <tr>
                       <th>
 
-                        <kbd>d&lt;movement&gt;</kbd><br>
+                        <kbd>d&lt;déplacement&gt;</kbd><br>
 
                       </th>
-                      <td>Delete from the current character to the end of the &lt;movement&gt;.</td>
+                      <td>Supprimer du curseur jusqu&#39;à la fin du &lt;déplacement&gt;.</td>
                     </tr>
                     <tr>
                       <th>
@@ -205,7 +205,7 @@ h2 {
                         <kbd>d$</kbd><br>
 
                       </th>
-                      <td>Delete to the end of the line.</td>
+                      <td>Supprimer du curseur jusqu&#39;à la fin de la ligne.</td>
                     </tr>
                     <tr>
                       <th>
@@ -214,11 +214,11 @@ h2 {
                         <kbd>0d$</kbd><br>
 
                       </th>
-                      <td>Delete the current line.</td>
+                      <td>Supprimer la ligne courante.</td>
                     </tr>
 
                   </table>
-                  <h2>Moving (command mode)</h2>
+                  <h2>Déplacement (mode commande)</h2>
                   <table>
 
                     <tr>
@@ -227,7 +227,7 @@ h2 {
                         <kbd>0</kbd><br>
 
                       </th>
-                      <td>Move to the start of the current line.</td>
+                      <td>Déplacer le curseur à la colonne 0.</td>
                     </tr>
                     <tr>
                       <th>
@@ -235,16 +235,16 @@ h2 {
                         <kbd>$</kbd><br>
 
                       </th>
-                      <td>Move to the end of the line.</td>
+                      <td>Déplacer le curseur à la fin de la ligne.</td>
                     </tr>
                     <tr>
                       <th>
 
                         <kbd>l</kbd><br>
-                        <kbd>Space</kbd><br>
+                        <kbd>Espace</kbd><br>
 
                       </th>
-                      <td>Move forward a character.</td>
+                      <td>Déplacer le curseur d&#39;un caractère vers l&#39;avant.</td>
                     </tr>
                     <tr>
                       <th>
@@ -252,7 +252,7 @@ h2 {
                         <kbd>h</kbd><br>
 
                       </th>
-                      <td>Move back a character.</td>
+                      <td>Déplacer le curseur d&#39;un caractère vers l&#39;arrière.</td>
                     </tr>
                     <tr>
                       <th>
@@ -260,7 +260,7 @@ h2 {
                         <kbd>e</kbd><br>
 
                       </th>
-                      <td>Move forward to the end of the next word.  Words are alphanumeric.</td>
+                      <td>Déplacer le curseur jusqu&#39;à la fin du prochain mot. Les mots sont alphanumériques.</td>
                     </tr>
                     <tr>
                       <th>
@@ -268,7 +268,7 @@ h2 {
                         <kbd>b</kbd><br>
 
                       </th>
-                      <td>Move back to the start of the current or previous word.  Words are alphanumeric.</td>
+                      <td>Déplacer le curseur jusqu&#39;au début du mot courant ou précédent. Les mots sont alphanumériques.</td>
                     </tr>
                     <tr>
                       <th>
@@ -276,20 +276,20 @@ h2 {
                         <kbd>%</kbd><br>
 
                       </th>
-                      <td>Move cursor to a matching (,),[,],{, or }.</td>
+                      <td>Déplacer le curseur jusqu&#39;au caractère correspondant : (,),[,],{, ou }.</td>
                     </tr>
 
                   </table>
-                  <h2>Cutting and pasting (command mode)</h2>
+                  <h2>Couper et coller (mode commande)</h2>
                   <table>
 
                     <tr>
                       <th>
 
-                        <kbd>y&lt;movement&gt;</kbd><br>
+                        <kbd>y&lt;déplacement&gt;</kbd><br>
 
                       </th>
-                      <td>Copy (yank) from the current character to the end of the &lt;movement&gt;.</td>
+                      <td>Copier du curseur jusqu&#39;à la fin du &lt;déplacement&gt;.</td>
                     </tr>
                     <tr>
                       <th>
@@ -297,7 +297,7 @@ h2 {
                         <kbd>yy</kbd><br>
 
                       </th>
-                      <td>Copy (yank) the current line.</td>
+                      <td>Copier la ligne courante.</td>
                     </tr>
                     <tr>
                       <th>
@@ -305,7 +305,7 @@ h2 {
                         <kbd>p</kbd><br>
 
                       </th>
-                      <td>Paste after the cursor.</td>
+                      <td>Coller le contenu du dernier tampon après le curseur.</td>
                     </tr>
                     <tr>
                       <th>
@@ -313,11 +313,11 @@ h2 {
                         <kbd>P</kbd><br>
 
                       </th>
-                      <td>Paste before the cursor.</td>
+                      <td>Coller le contenu du dernier tampon avant le curseur.</td>
                     </tr>
 
                   </table>
-                  <h2>Undo and Repeat (command mode)</h2>
+                  <h2>Annuler et répéter (mode commande)</h2>
                   <table>
 
                     <tr>
@@ -326,7 +326,7 @@ h2 {
                         <kbd>u</kbd><br>
 
                       </th>
-                      <td>Incrementally undo the last action.</td>
+                      <td>Annuler incrémentalement la dernière action.</td>
                     </tr>
                     <tr>
                       <th>
@@ -334,7 +334,7 @@ h2 {
                         <kbd>U</kbd><br>
 
                       </th>
-                      <td>Undo all actions.</td>
+                      <td>Annuler toutes les actions.</td>
                     </tr>
                     <tr>
                       <th>
@@ -342,7 +342,7 @@ h2 {
                         <kbd>.</kbd><br>
 
                       </th>
-                      <td>Repeat the last action.</td>
+                      <td>Répéter la dernière action.</td>
                     </tr>
 
                   </table>
@@ -350,7 +350,7 @@ h2 {
                 </div>
                 <div class="col-lg-6 col-md-6">
 
-                  <h2>History (command mode)</h2>
+                  <h2>Historique (mode commande)</h2>
                   <table>
 
                     <tr>
@@ -361,7 +361,7 @@ h2 {
                         <kbd>-</kbd><br>
 
                       </th>
-                      <td>Fetch the previous command from the history list.</td>
+                      <td>Donner la commande précente de l&#39;historique.</td>
                     </tr>
                     <tr>
                       <th>
@@ -370,7 +370,7 @@ h2 {
                         <kbd>+</kbd><br>
 
                       </th>
-                      <td>Fetch the next command from the history list.</td>
+                      <td>Donner la commande suivante de l&#39;historique.</td>
                     </tr>
                     <tr>
                       <th>
@@ -378,7 +378,7 @@ h2 {
                         <kbd>G</kbd><br>
 
                       </th>
-                      <td>Go to the most recent line in the history list.</td>
+                      <td>Aller à la ligne la plus récente de l&#39;historique.</td>
                     </tr>
                     <tr>
                       <th>
@@ -386,7 +386,7 @@ h2 {
                         <kbd>15G</kbd><br>
 
                       </th>
-                      <td>Go to line 15 in the history list.</td>
+                      <td>Aller à la ligne 15 de l&#39;historique.</td>
                     </tr>
                     <tr>
                       <th>
@@ -394,7 +394,7 @@ h2 {
                         <kbd>Ctrl-r</kbd><br>
 
                       </th>
-                      <td>Incremental search backward through history.</td>
+                      <td>Rechercher antérieurement dans l&#39;historique.</td>
                     </tr>
                     <tr>
                       <th>
@@ -402,7 +402,7 @@ h2 {
                         <kbd>/</kbd><br>
 
                       </th>
-                      <td>Search backward through history for a string.</td>
+                      <td>Rechercher postérieurement dans l&#39;historique pour une chaîne donnée.</td>
                     </tr>
                     <tr>
                       <th>
@@ -410,7 +410,7 @@ h2 {
                         <kbd>?</kbd><br>
 
                       </th>
-                      <td>Search forward through history for a string.</td>
+                      <td>Rechercher postérieurement dans l&#39;historique pour une chaîne donnée.</td>
                     </tr>
                     <tr>
                       <th>
@@ -418,7 +418,7 @@ h2 {
                         <kbd>n</kbd><br>
 
                       </th>
-                      <td>Repeat the search in the same direction.</td>
+                      <td>Répéter la recherche dans la même direction.</td>
                     </tr>
                     <tr>
                       <th>
@@ -426,32 +426,32 @@ h2 {
                         <kbd>N</kbd><br>
 
                       </th>
-                      <td>Repeat the search in the opposite direction.</td>
+                      <td>Répéter la recherche dans la direction inverse.</td>
                     </tr>
 
                   </table>
-                  <h2>Marks (command mode)</h2>
+                  <h2>Marqueurs (mode commande)</h2>
                   <table>
 
                     <tr>
                       <th>
 
-                        <kbd>m&lt;letter&gt;</kbd><br>
+                        <kbd>m&lt;lettre&gt;</kbd><br>
 
                       </th>
-                      <td>Set a mark named &lt;letter&gt;</td>
+                      <td>Définir un marqueur nommé &lt;lettre&gt; à la position du curseur.</td>
                     </tr>
                     <tr>
                       <th>
 
-                        <kbd>`&lt;letter&gt;</kbd><br>
+                        <kbd>`&lt;lettre&gt;</kbd><br>
 
                       </th>
-                      <td>Jump to the mark named &lt;letter&gt;</td>
+                      <td>Revenir à la position du marqueur &lt;lettre&gt;.</td>
                     </tr>
 
                   </table>
-                  <h2>Completing (insert mode)</h2>
+                  <h2>Complétion (mode insertion)</h2>
                   <table>
 
                     <tr>
@@ -460,11 +460,11 @@ h2 {
                         <kbd>Tab</kbd><br>
 
                       </th>
-                      <td>Autocomplete.</td>
+                      <td>Auto-compléter le mot courant.</td>
                     </tr>
 
                   </table>
-                  <h2>Completing (command mode)</h2>
+                  <h2>Complétion (mode commande)</h2>
                   <table>
 
                     <tr>
@@ -473,7 +473,7 @@ h2 {
                         <kbd>=</kbd><br>
 
                       </th>
-                      <td>Autocomplete.</td>
+                      <td>Autocompléter le mot courant.</td>
                     </tr>
                     <tr>
                       <th>
@@ -481,11 +481,11 @@ h2 {
                         <kbd>*</kbd><br>
 
                       </th>
-                      <td>Insert all possible completions.</td>
+                      <td>Insérer tous les auto-compléments possibles.</td>
                     </tr>
 
                   </table>
-                  <h2>Miscellaneous (insert mode)</h2>
+                  <h2>Divers (mode insertion)</h2>
                   <table>
 
                     <tr>
@@ -494,7 +494,7 @@ h2 {
                         <kbd>Ctrl-d</kbd><br>
 
                       </th>
-                      <td>EOF or exit.</td>
+                      <td>Fin de fichier (EOF) ou sortir.</td>
                     </tr>
                     <tr>
                       <th>
@@ -502,7 +502,7 @@ h2 {
                         <kbd>Ctrl-_</kbd><br>
 
                       </th>
-                      <td>Undo the last action.</td>
+                      <td>Annuler la dernière action.</td>
                     </tr>
                     <tr>
                       <th>
@@ -510,7 +510,7 @@ h2 {
                         <kbd>Ctrl-u</kbd><br>
 
                       </th>
-                      <td>Discard the line</td>
+                      <td>Se débarasser de la ligne.</td>
                     </tr>
                     <tr>
                       <th>
@@ -518,11 +518,11 @@ h2 {
                         <kbd>Ctrl-t</kbd><br>
 
                       </th>
-                      <td>Transpose characters.</td>
+                      <td>Transposer le caractère courant et le caractère précédent.</td>
                     </tr>
 
                   </table>
-                  <h2>Miscellaneous (command mode)</h2>
+                  <h2>Divers (mode commande)</h2>
                   <table>
 
                     <tr>
@@ -531,7 +531,7 @@ h2 {
                         <kbd>Ctrl-l</kbd><br>
 
                       </th>
-                      <td>Clear the screen.</td>
+                      <td>Effacer l&#39;écran.</td>
                     </tr>
                     <tr>
                       <th>
@@ -539,7 +539,7 @@ h2 {
                         <kbd>#</kbd><br>
 
                       </th>
-                      <td>Insert a comment at the beginning of the line, add the line to the history, then start a new line.</td>
+                      <td>Insérer un commentaire au début de la ligne, ajouter la ligne à l&#39;historique et débuter une nouvelle ligne.</td>
                     </tr>
                     <tr>
                       <th>
@@ -547,13 +547,18 @@ h2 {
                         <kbd>~</kbd><br>
 
                       </th>
-                      <td>Change case.</td>
+                      <td>Changer la casse du caractère courant.</td>
                     </tr>
 
                   </table>
 
                 </div>
 
+              </div>
+
+              <div class="row">
+                Consulter le <a href="emacs.html">mode d'édition Emacs</a><br>
+                Retournez à l'<a href="index.html">index</a>
               </div>
 
             </div> <!-- end container -->
@@ -566,8 +571,8 @@ h2 {
           <a class="flattr" title="Readline Cheat Sheet" href="https://flattr.com/submit/auto?user_id=kablamo&url=http%3A%2F%2Freadline.kablamo.org%2Femacs.html&title=Readline%20Cheat%20Sheet" target="_blank">
             <img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0">
           </a>
-          View the source on <a href="https://github.com/kablamo/readline-cheat-sheet">Github</a>
-          <p class="muted credit">Created by Eric Johnson (<a href="http://kablamo.org">kablamo</a>)</p>
+          Consultez la version <a href="http://readline.kablamo.org/vi.html">originale</a> ou les fichiers source sur <a href="https://github.com/kablamo/readline-cheat-sheet">Github</a>
+          <p class="muted credit">Créé par Eric Johnson (<a href="http://kablamo.org">kablamo</a>) &mdash; traduit par <a href="http://www.savoirfairelinux.com">Savoir-Faire Linux</a> (<a href="http://www.github.com/savoirfairelinux/">Github</a>)</p>
         </div>
       </div>
 
