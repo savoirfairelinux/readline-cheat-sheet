@@ -1,172 +1,172 @@
 ---
 -
-  - name: Entering command mode
+  - name: Aborder le mode commande
     rows:
       - cmds:
           - Ctrl-[
           - Esc
-        help: Start command mode.
-  - name: Entering insert mode
+        help: Débuter le mode commande.
+  - name: Aborder le mode insertion
     rows:
       - cmds:
           - i
-        help: Insert before the cursor.
+        help: Insérer avant le curseur.
       - cmds:
           - a
-        help: Insert (append) after the cursor.
+        help: Insérer (ajouter) après le curseur.
       - cmds:
           - I
-        help: Insert at the beginning of the line.
+        help: Insérer au début de la ligne (ignore les espaces blancs).
       - cmds:
           - A
-        help: Insert (append) at the end of the line.
+        help: Insérer (ajouter) à la fin de la ligne.
       - cmds:
           - r
-        help: Replace the character under the cursor.
+        help: Remplacer le caractère sous le curseur.
       - cmds:
           - R
-        help: Replace characters under the cursor.
+        help: Remplacer le caractère sous le curseur et les suivants en mode remplacement.
       - cmds:
           - v
-        help: Edit the command with $VISUAL, $EDITOR, or vi.
-  - name: Deleting (command mode)
+        help: Éditer la commande avec $VISUAL, $EDITOR ou vi.
+  - name: Suppression (mode commande)
     rows:
       - cmds:
-          - d<movement>
-        help: Delete from the current character to the end of the <movement>.
+          - d<déplacement>
+        help: Supprimer du curseur jusqu'à la fin du <déplacement>.
       - cmds:
           - D
           - d$
-        help: Delete to the end of the line.
+        help: Supprimer du curseur jusqu'à la fin de la ligne.
       - cmds:
           - dd
           - 0d$
-        help: Delete the current line.
-  - name: Moving (command mode)
+        help: Supprimer la ligne courante.
+  - name: Déplacement (mode commande)
     rows:
       - cmds:
           - 0
-        help: Move to the start of the current line.
+        help: Déplacer le curseur à la colonne 0.
       - cmds:
           - $
-        help: Move to the end of the line.
+        help: Déplacer le curseur à la fin de la ligne.
       - cmds:
           - l
-          - Space
-        help: Move forward a character.
+          - Espace
+        help: Déplacer le curseur d'un caractère vers l'avant.
       - cmds:
           - h
-        help: Move back a character.
+        help: Déplacer le curseur d'un caractère vers l'arrière.
       - cmds:
           - e
-        help: Move forward to the end of the next word.  Words are alphanumeric.
+        help: Déplacer le curseur jusqu'à la fin du prochain mot. Les mots sont alphanumériques.
       - cmds:
           - b
-        help: Move back to the start of the current or previous word.  Words are alphanumeric.
+        help: Déplacer le curseur jusqu'au début du mot courant ou précédent. Les mots sont alphanumériques.
       - cmds:
           - %
-        help: Move cursor to a matching (,),[,],{, or }.
-  - name: Cutting and pasting (command mode)
+        help: Déplacer le curseur jusqu'au caractère correspondant : (,),[,],{, ou }.
+  - name: Couper et coller (mode commande)
     rows:
       - cmds:
-          - y<movement>
-        help: Copy (yank) from the current character to the end of the <movement>.
+          - y<déplacement>
+        help: Copier du curseur jusqu'à la fin du <déplacement>.
       - cmds:
           - yy
-        help: Copy (yank) the current line.
+        help: Copier la ligne courante.
       - cmds:
           - p
-        help: Paste after the cursor.
+        help: Coller le contenu du dernier tampon après le curseur.
       - cmds:
           - P
-        help: Paste before the cursor.
-  - name: Undo and Repeat (command mode)
+        help: Coller le contenu du dernier tampon avant le curseur.
+  - name: Annuler et répéter (mode commande)
     rows:
       - cmds:
           - u
-        help: Incrementally undo the last action.
+        help: Annuler incrémentalement la dernière action.
       - cmds:
           - U
-        help: Undo all actions.
+        help: Annuler toutes les actions.
       - cmds:
           - .
-        help: Repeat the last action.
+        help: Répéter la dernière action.
 -
-  - name: History (command mode)
+  - name: Historique (mode commande)
     rows:
       - cmds:
           - k
           - Ctrl-p
           - "-"
-        help: Fetch the previous command from the history list.
+        help: Donner la commande précente de l'historique.
       - cmds:
           - j
           - +
-        help: Fetch the next command from the history list.
+        help: Donner la commande suivante de l'historique.
       - cmds:
           - G
-        help: Go to the most recent line in the history list.
+        help: Aller à la ligne la plus récente de l'historique.
       - cmds:
           - 15G
-        help: Go to line 15 in the history list.
+        help: Aller à la ligne 15 de l'historique.
       - cmds:
           - Ctrl-r
-        help: Incremental search backward through history.
+        help: Rechercher antérieurement dans l'historique.
       - cmds:
           - /
-        help: Search backward through history for a string.
+        help: Rechercher postérieurement dans l'historique pour une chaîne donnée.
       - cmds:
           - ?
-        help: Search forward through history for a string.
+        help: Rechercher postérieurement dans l'historique pour une chaîne donnée.
       - cmds:
           - n
-        help: Repeat the search in the same direction.
+        help: Répéter la recherche dans la même direction.
       - cmds:
           - N
-        help: Repeat the search in the opposite direction.
-  - name: Marks (command mode)
+        help: Répéter la recherche dans la direction inverse.
+  - name: Marqueurs (mode commande)
     rows:
       - cmds:
-          - m<letter>
-        help: Set a mark named <letter>
+          - m<lettre>
+        help: Définir un marqueur nommé <lettre> à la position du curseur.
       - cmds:
-          - "`<letter>"
-        help: Jump to the mark named <letter>
-  - name: Completing (insert mode)
+          - "`<lettre>"
+        help: Revenir à la position du marqueur <lettre>.
+  - name: Complétion (mode insertion)
     rows:
       - cmds:
           - Tab
-        help: Autocomplete.
-  - name: Completing (command mode)
+        help: Auto-compléter le mot courant.
+  - name: Complétion (mode commande)
     rows:
       - cmds:
           - "="
-        help: Autocomplete.
+        help: Autocompléter le mot courant.
       - cmds:
           - "*"
-        help: Insert all possible completions.
-  - name: Miscellaneous (insert mode)
+        help: Insérer tous les auto-compléments possibles.
+  - name: Divers (mode insertion)
     rows:
       - cmds:
           - Ctrl-d
-        help: EOF or exit.
+        help: Fin de fichier (EOF) ou sortir.
       - cmds:
           - Ctrl-_
-        help: Undo the last action.
+        help: Annuler la dernière action.
       - cmds:
           - Ctrl-u
-        help: Discard the line
+        help: Se débarasser de la ligne.
       - cmds:
           - Ctrl-t
-        help: Transpose characters.
-  - name: Miscellaneous (command mode)
+        help: Transposer le caractère courant et le caractère précédent.
+  - name: Divers (mode commande)
     rows:
       - cmds:
           - Ctrl-l
-        help: Clear the screen.
+        help: Effacer l'écran.
       - cmds:
           - "#"
-        help: Insert a comment at the beginning of the line, add the line to the history, then start a new line.
+        help: Insérer un commentaire au début de la ligne, ajouter la ligne à l'historique et débuter une nouvelle ligne.
       - cmds:
           - "~"
-        help: Change case.
+        help: Changer la casse du caractère courant.
