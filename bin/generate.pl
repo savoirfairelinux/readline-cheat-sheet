@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 use lib 'local/lib/perl5';
+use open qw(:utf8);
 
 use Text::Xslate;
 use Path::Class;
@@ -13,12 +14,13 @@ foreach my $mode (qw/emacs vi/) {
     my $out_dir  = dir('public');
     my $out_file = $out_dir->file("$mode.html");
 
-    my $columns  = LoadFile "root/data-$mode.yml";
+    open my $yamldata, '<', "root/data-$mode.yml";
+    my $columns  = LoadFile($yamldata);
     my $vars     = { columns => $columns };
     my $string   = Text::Xslate->new(path => $in_dir)
         ->render("$mode.html", $vars);
 
     $out_dir->mkpath;
-    $out_file->spew($string);
+    $out_file->spew(iomode => '>:encoding(UTF-8)', $string);
 }
 
