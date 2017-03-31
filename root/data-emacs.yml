@@ -39,16 +39,16 @@
         help: Aller à la dernière ligne de l'historique
       - cmds:
           - Ctrl-r
-        help: Rechercher antérieurement dans l'historique
+        help: Rechercher en ordre chronologique inverse dans l'historique
       - cmds:
           - Ctrl-s
-        help: Rechercher postérieurement dans l'historique
+        help: Rechercher en ordre chronologique dans l'historique
       - cmds:
           - Alt-p
-        help: Rechercher antérieurement dans l'historique pour une chaîne donnée
+        help: Rechercher dans l'historique les occurences précédentes d'une chaîne donnée
       - cmds:
           - Alt-n
-        help: Rechercher postérieurement dans l'historique pour une chaîne donnée
+        help: Rechercher dans l'historique les occurences suivantes d'une chaîne donnée
       - cmds:
           - Ctrl-Alt-y
         help: Insérer le premier argument de la commande précédente. Avec un argument n, insérer le n-ième argument de la commande précédente
@@ -106,10 +106,10 @@
         help: Supprimer les espaces blancs autour du curseur
       - cmds:
           - Ctrl-y
-        help: Coller le contenu supprimé au haut de l'anneau de suppression
+        help: Coller le contenu supprimé en haut de l'anneau de suppression
       - cmds:
           - Alt-y
-        help: Faire pivoter l'anneau de suppression et coller le contenu au haut de celui-ci. Fonctionne seulement après avoir collé
+        help: Faire pivoter l'anneau de suppression et coller le contenu en haut de celui-ci. Fonctionne seulement après avoir collé
   - name: Complétion
     rows:
       - cmds:
@@ -146,7 +146,7 @@
         help: Annuler incrémentalement, de façon indépendante pour chaque ligne
       - cmds:
           - Alt-r
-        help: Annuler tous les changements apportés à la ligne courante. Idem à exécuter toutes les annulations afin de revenir à l'état initial
+        help: Annuler tous les changements apportés à la ligne courante. Revient à exécuter consécutivement toutes les annulations afin de revenir à l'état initial de la ligne
       - cmds:
           - Alt-Espace
           - Ctrl-@
@@ -156,10 +156,10 @@
         help: Définir un marqueur et revenir à la position du marqueur précédent
       - cmds:
           - Ctrl-]
-        help: Rechercher postérieurement pour un seul caractère dans la ligne courante et s'y déplacer
+        help: Rechercher vers l'avant pour un seul caractère dans la ligne courante et s'y déplacer
       - cmds:
           - Ctrl-Alt-]
-        help: Rechercher antérieurement pour un seul caractère dans la ligne courante et s'y déplacer
+        help: Rechercher vers l'arrière pour un seul caractère dans la ligne courante et s'y déplacer
       - cmds:
           - Alt-#
         help: Commenter la ligne courante et en commencer une nouvelle
